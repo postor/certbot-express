@@ -7,7 +7,7 @@ module.exports.http2 = (config) => {
   const { certDir, app, keyPath, certPath } = config
 
   config.listen = (ports = {}) => {
-    const { http = 80, http2 = 433 } = ports
+    const { http = 80, http2 = 443 } = ports
     return Promise.all([
       //http
       new Promise((resolve, reject) => {

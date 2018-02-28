@@ -16,12 +16,11 @@ sudo apt-get -o Acquire::ForceIPv4=true update
 sudo apt install git -y
 
 # certbot
-sudo apt-get update
+sudo apt-get -o Acquire::ForceIPv4=true update
 sudo apt-get install software-properties-common -y
 sudo add-apt-repository ppa:certbot/certbot
-sudo apt-get update
+sudo apt-get -o Acquire::ForceIPv4=true update
 sudo apt-get install certbot  -y
-sudo apt install python-certbot-nginx -y
 
 ```
 
@@ -72,7 +71,7 @@ npm install certbot-express
 
 ```
 const express = require('express')
-const { redirect, http2 } = require('../src')
+const { redirect, http2 } = require('certbot-express')
 
 const app = express()
 const certDir = '/etc/letsencrypt/live/test.i18ntech.com/'
