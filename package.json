@@ -1,7 +1,7 @@
 {
   "name": "certbot-express",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple and free http2 with express | 简单免费给express升级http2",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
