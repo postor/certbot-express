@@ -20,13 +20,13 @@ certbot certonly
 ```
 [see full conversation here | 查看命令对话详情](./docs/generate-certification-certonly.md)
 
-## install
+## install | 安装
 
 ```
 npm install certbot-express
 ```
 
-## usage
+## usage | 使用
 
 ```
 const express = require('express')
