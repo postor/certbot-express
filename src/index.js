@@ -1,5 +1,3 @@
-
-const fs = require('fs-extra')
 const url = require('url')
 const Http2 = require('./Http2')
 

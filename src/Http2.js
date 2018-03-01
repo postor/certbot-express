@@ -1,4 +1,5 @@
 const spdy = require('spdy')
+const fs = require('fs-extra')
 
 class Http2 {
   constructor(config) {
