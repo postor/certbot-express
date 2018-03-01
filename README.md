@@ -33,7 +33,8 @@ const express = require('express')
 const { redirect, http2 } = require('certbot-express')
 
 const app = express()
-const certDir = '/etc/letsencrypt/live/test.i18ntech.com/'
+const certDir = '/etc/letsencrypt/live/test.i18ntech.com/' // you can get certDir from env
+const dev = process.env.NODE_ENV !== 'production'
 
 app.use(redirect)
 app.use('/', (req, res) => {
@@ -41,6 +42,7 @@ app.use('/', (req, res) => {
 })
 
 http2({
+  dev,  //if dev is true only http is served, all about http2 are skipped
   certDir,
   app,
 }).listen().then(() => {

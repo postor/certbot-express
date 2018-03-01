@@ -1,6 +1,6 @@
 {
   "name": "certbot-express",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple and free http2 with express | 简单免费给express升级http2",
   "main": "src/index.js",
   "scripts": {
