@@ -18,7 +18,7 @@ if you are not using certbot, skip this | 如果你不使用certbot，跳过此�
 certbot certonly
 
 ```
-[see full conversation here](./docs/generate-certification-certonly.md)
+[see full conversation here | 查看命令对话详情](./docs/generate-certification-certonly.md)
 
 ## install
 
